@@ -11,6 +11,7 @@ import { Textarea } from "@/components/ui/textarea"
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 import { Checkbox } from "@/components/ui/checkbox"
 import { MapPin, Phone, Users, Calendar, MessageCircle, CheckCircle } from "lucide-react"
+import Image from "next/image"
 
 interface UmrohFormData {
   registrationId: string
@@ -362,7 +363,13 @@ Terima kasih telah mendaftar umroh dengan RehlaTours!
         <div className="max-w-4xl mx-auto px-4 py-6">
           <div className="text-center space-y-2">
             <div className="flex items-center justify-center gap-3 mb-4">
-              <img src="/images/rehla-logo.png" alt="RehlaTours Logo" className="h-12 w-12 object-contain" />
+              <Image
+                src="/images/rehla-logo.png"
+                alt="RehlaTours Logo"
+                width={48}
+                height={48}
+                className="h-12 w-12 object-contain"
+              />
               <div>
                 <h1 className="text-2xl font-bold text-primary">RehlaTours</h1>
               </div>
